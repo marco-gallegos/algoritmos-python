@@ -7,6 +7,7 @@ def qs(lista, lim_izq, lim_der):
 
         while lista[izquierda] < lista[pivote]:
             izquierda += 1
+        
         while lista[derecha] > lista[pivote]:
             derecha -= 1
 
@@ -17,6 +18,7 @@ def qs(lista, lim_izq, lim_der):
 
     if izquierda < lim_der:
         qs(lista, izquierda, lim_der)
+    
     if derecha > lim_izq:
         qs(lista, lim_izq, derecha)
 
